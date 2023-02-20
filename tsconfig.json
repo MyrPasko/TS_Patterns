@@ -8,9 +8,13 @@
     "allowJs": true,
     "lib": [
       "es6",
-      "dom"
+      "dom",
+      "es2017"
     ],
     "rootDir": "src",
-    "moduleResolution": "node"
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "target": "es2016"
   }
 }
