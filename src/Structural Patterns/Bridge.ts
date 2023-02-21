@@ -35,7 +35,7 @@ class WatsUpProvider implements IProvider {
 }
 
 class NotificationSender {
-  constructor(private provider: IProvider) {
+  constructor(public provider: IProvider) {
   }
 
   send() {
@@ -46,7 +46,7 @@ class NotificationSender {
 }
 
 class DelayNotificationSender extends NotificationSender {
-  constructor(private provider: IProvider) {
+  constructor(public provider: IProvider) {
     super(provider);
   }
 
@@ -60,3 +60,6 @@ sender1.send();
 
 const sender2 = new NotificationSender(new WatsUpProvider());
 sender2.send();
+
+const sender3 = new DelayNotificationSender(new TelegramProvider());
+sender3.send();
