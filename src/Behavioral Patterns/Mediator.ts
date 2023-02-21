@@ -1,4 +1,5 @@
 // The main idea is orchestration of the different classes, call orders and so on.
+// Decrease the connectivity between classes and moving  out to the abstract class the shared logic
 
 interface Mediator {
   notify(sender: string, event: string): void;

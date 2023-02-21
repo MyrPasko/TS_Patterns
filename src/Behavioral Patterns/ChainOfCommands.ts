@@ -1,4 +1,5 @@
 // Chain of commands - middleware
+// Moving data by chain. If the class can handle the data - it does so, if not - move forward to the next class.
 
 interface IMiddleware {
   next(mid: IMiddleware): IMiddleware;

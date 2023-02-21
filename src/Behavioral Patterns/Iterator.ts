@@ -1,4 +1,5 @@
 // Iteration for various characteristics
+// Moving out the logic of iteration through the collection to a separate class.
 
 class Task {
   constructor(public priority: number) {
